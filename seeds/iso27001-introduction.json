@@ -1,0 +1,1191 @@
+{
+  "course": {
+    "title": "Introduction to ISO 27001 ISM",
+    "slug": "introduction-to-iso-27001-ism",
+    "subtitle": "ISO/IEC 27001:2022 + Amendment 1:2024, with the 2025 transition and incident-response guidance",
+    "description": "An introductory, evidence-focused ISMS course with ten lessons, original practical labs, thirty quiz questions, official web reading links and downloadable worksheets. Baseline: ISO/IEC 27001:2022 with Amendment 1:2024. The 2025 topic is the accredited certification transition ending 31 October 2025, not an ISO/IEC 27001:2025 edition. NIST SP 800-61 Rev. 3 (2025) is supplementary guidance. Source links await live verification because the authoring environment blocked their domains. This learning course does not grant professional or ISO certification and does not replace the licensed standards.",
+    "level": "beginner",
+    "language": "en",
+    "currency": "USD",
+    "price": 0,
+    "originalPrice": 0,
+    "durationHours": 12.75,
+    "thumbnailUrl": "",
+    "isPublished": true,
+    "isFeatured": true,
+    "isFree": true,
+    "certificationIncluded": false,
+    "category": {
+      "name": "Governance, Risk & Compliance",
+      "slug": "governance-risk-compliance"
+    },
+    "tags": [
+      "ISO 27001",
+      "ISMS",
+      "2022 edition",
+      "2024 climate amendment",
+      "2025 transition",
+      "GRC"
+    ],
+    "requirements": [
+      "No prior ISO knowledge required",
+      "Basic familiarity with business information and cloud services",
+      "Use only synthetic data for labs",
+      "Access to licensed ISO documents for exact implementation requirements"
+    ],
+    "objectives": [
+      "Explain the ISMS and distinguish standards editions from transition dates",
+      "Define context and scope, including climate-change relevance",
+      "Create a policy, risk register, treatment plan and sample SoA",
+      "Practice operational controls, incident response and recovery",
+      "Plan internal audit, management review and corrective action"
+    ]
+  },
+  "lessons": [
+    {
+      "title": "What an ISMS is and which edition applies",
+      "slug": "what-an-isms-is-and-which-edition-applies",
+      "description": "An information security management system (ISMS) is a repeatable way to decide what information needs protection, manage the associated risks, and demonstrate that decisions are implemented and reviewed. Confidentiality prevents unauthorized disclosure; integrity protects accuracy and completeness; availability supports timely access. A management system connects people, processes, technology, leadership and evidence rather than purchasing a single security product.",
+      "content": "Lesson 1 · What an ISMS is and which edition applies\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nAn information security management system (ISMS) is a repeatable way to decide what information needs protection, manage the associated risks, and demonstrate that decisions are implemented and reviewed. Confidentiality prevents unauthorized disclosure; integrity protects accuracy and completeness; availability supports timely access. A management system connects people, processes, technology, leadership and evidence rather than purchasing a single security product.\n\nThe course baseline is ISO/IEC 27001:2022, the third edition, together with Amendment 1:2024 concerning climate action. There is no ISO/IEC 27001:2025 edition asserted in this course. The important 2025 change was the end of the transition period for accredited certification from the 2013 edition to the 2022 edition, on 31 October 2025 under IAF MD 26. That is a certification-transition date, not a new publication year.\n\nClauses 4–10 describe the management system requirements. Annex A supplies a reference set of controls used in risk treatment. ISO/IEC 27002:2022 provides implementation guidance and is not itself the ISMS certification requirements standard. Buying or reading the licensed standards is necessary when implementing exact requirements; these lessons use original explanations rather than reproducing their text.\n\nExample: a training company protects learner records, examination questions and course availability. A backup addresses availability, but the ISMS also assigns an owner, sets recovery objectives, tests restoration, and reviews evidence. Course completion is introductory education and does not confer ISO certification.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- IAF MD 26, Issue 2 — transition requirements for ISO/IEC 27001:2022: https://iaf.nu/wp-content/uploads/2023/02/IAF_MD_26_Issue_2_14022023.pdf\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 60,
+      "sortOrder": 1,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "Scenario: Cedar Learning is a fictional 25-person training provider with a cloud LMS, remote instructors and outsourced payments. Use synthetic information only.\n1. List six information assets and their owners.\n2. For each asset, describe one confidentiality, integrity and availability failure.\n3. Choose the three most consequential failures and explain the business impact.\n4. Write a 100-word statement explaining how an ISMS differs from a list of tools.\nDeliverable: asset/CIA worksheet and the statement. Acceptance: named owners, concrete impacts and at least one example for each CIA property."
+      },
+      "quiz": [
+        {
+          "prompt": "Which baseline does this course use?",
+          "options": [
+            {
+              "text": "ISO/IEC 27001:2022 plus Amendment 1:2024",
+              "correct": true
+            },
+            {
+              "text": "ISO/IEC 27001:2025",
+              "correct": false
+            },
+            {
+              "text": "ISO/IEC 27002 certification",
+              "correct": false
+            },
+            {
+              "text": "Only ISO/IEC 27001:2013",
+              "correct": false
+            }
+          ],
+          "explanation": "The 2025 transition does not create a 2025 edition."
+        },
+        {
+          "prompt": "What does the 31 October 2025 milestone concern?",
+          "options": [
+            {
+              "text": "Completion of the accredited 2013-to-2022 certification transition",
+              "correct": true
+            },
+            {
+              "text": "Publication of a 2025 standard",
+              "correct": false
+            },
+            {
+              "text": "A universal breach-reporting deadline",
+              "correct": false
+            },
+            {
+              "text": "Mandatory use of one security product",
+              "correct": false
+            }
+          ],
+          "explanation": "IAF MD 26 governs the certification transition; contractual and legal deadlines are separate."
+        },
+        {
+          "prompt": "Which activity best demonstrates an ISMS?",
+          "options": [
+            {
+              "text": "An owned risk process with implementation evidence and review",
+              "correct": true
+            },
+            {
+              "text": "Purchasing a firewall only",
+              "correct": false
+            },
+            {
+              "text": "A one-time vulnerability scan",
+              "correct": false
+            },
+            {
+              "text": "An unsigned policy template",
+              "correct": false
+            }
+          ],
+          "explanation": "The management system connects decisions, responsibilities, evidence and continual improvement."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "IAF MD 26, Issue 2 — transition requirements for ISO/IEC 27001:2022",
+          "url": "https://iaf.nu/wp-content/uploads/2023/02/IAF_MD_26_Issue_2_14022023.pdf"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 1 lab workbook (original)",
+          "fileName": "iso27001-lesson-01-workbook.txt",
+          "fileSize": 1174,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDE6IFdoYXQgYW4gSVNNUyBpcyBhbmQgd2hpY2ggZWRpdGlvbiBhcHBsaWVzCgpPcmlnaW5hbCBwcmFjdGljZSB3b3Jrc2hlZXQKClNjZW5hcmlvOiBDZWRhciBMZWFybmluZyBpcyBhIGZpY3Rpb25hbCAyNS1wZXJzb24gdHJhaW5pbmcgcHJvdmlkZXIgd2l0aCBhIGNsb3VkIExNUywgcmVtb3RlIGluc3RydWN0b3JzIGFuZCBvdXRzb3VyY2VkIHBheW1lbnRzLiBVc2Ugc3ludGhldGljIGluZm9ybWF0aW9uIG9ubHkuCjEuIExpc3Qgc2l4IGluZm9ybWF0aW9uIGFzc2V0cyBhbmQgdGhlaXIgb3duZXJzLgoyLiBGb3IgZWFjaCBhc3NldCwgZGVzY3JpYmUgb25lIGNvbmZpZGVudGlhbGl0eSwgaW50ZWdyaXR5IGFuZCBhdmFpbGFiaWxpdHkgZmFpbHVyZS4KMy4gQ2hvb3NlIHRoZSB0aHJlZSBtb3N0IGNvbnNlcXVlbnRpYWwgZmFpbHVyZXMgYW5kIGV4cGxhaW4gdGhlIGJ1c2luZXNzIGltcGFjdC4KNC4gV3JpdGUgYSAxMDAtd29yZCBzdGF0ZW1lbnQgZXhwbGFpbmluZyBob3cgYW4gSVNNUyBkaWZmZXJzIGZyb20gYSBsaXN0IG9mIHRvb2xzLgpEZWxpdmVyYWJsZTogYXNzZXQvQ0lBIHdvcmtzaGVldCBhbmQgdGhlIHN0YXRlbWVudC4gQWNjZXB0YW5jZTogbmFtZWQgb3duZXJzLCBjb25jcmV0ZSBpbXBhY3RzIGFuZCBhdCBsZWFzdCBvbmUgZXhhbXBsZSBmb3IgZWFjaCBDSUEgcHJvcGVydHkuCgpFdmlkZW5jZSB0YWJsZQpJdGVtIHwgT3duZXIgfCBEZWNpc2lvbi9yYXRpb25hbGUgfCBFdmlkZW5jZSB8IFJldmlldyBkYXRlCgpTZWxmLXJldmlldwpXaGF0IHdvcmtlZD8KV2hhdCBpcyBtaXNzaW5nPwpXaGF0IHdpbGwgY2hhbmdlPwoKClNvdXJjZXMgYW5kIHJlYWRpbmcKLSBJU08vSUVDIDI3MDAxOjIwMjIg4oCUIG9mZmljaWFsIHN0YW5kYXJkIG92ZXJ2aWV3OiBodHRwczovL3d3dy5pc28ub3JnL3N0YW5kYXJkLzI3MDAxCi0gSVNPL0lFQyAyNzAwMjoyMDIyIOKAlCBjb250cm9sIGd1aWRhbmNlOiBodHRwczovL3d3dy5pc28ub3JnL3N0YW5kYXJkLzc1NjUyLmh0bWwKLSBJQUYgTUQgMjYsIElzc3VlIDIg4oCUIHRyYW5zaXRpb24gcmVxdWlyZW1lbnRzIGZvciBJU08vSUVDIDI3MDAxOjIwMjI6IGh0dHBzOi8vaWFmLm51L3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDIzLzAyL0lBRl9NRF8yNl9Jc3N1ZV8yXzE0MDIyMDIzLnBkZg==",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Organizational context, scope and the climate amendment",
+      "slug": "organizational-context-scope-and-the-climate-amendment",
+      "description": "Clause 4 starts by understanding the organization and its relevant internal and external issues, the interested parties and their relevant requirements, and the ISMS scope. Scope should identify business activities, locations, information, systems and important interfaces. A boundary that hides a critical outsourced service makes risk decisions unreliable even if the service is not directly operated by the organization.",
+      "content": "Lesson 2 · Organizational context, scope and the climate amendment\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 4 starts by understanding the organization and its relevant internal and external issues, the interested parties and their relevant requirements, and the ISMS scope. Scope should identify business activities, locations, information, systems and important interfaces. A boundary that hides a critical outsourced service makes risk decisions unreliable even if the service is not directly operated by the organization.\n\nAmendment 1:2024 adds climate-change considerations to management-system context. Organizations determine whether climate change is a relevant issue; the amendment also notes that relevant interested parties can have climate-related requirements. This is not a blanket instruction to implement environmental controls or certify an environmental management system. Document the assessment and its reasoning. If climate-related conditions affect information security, carry those conditions into risk assessment, continuity and supplier decisions as appropriate.\n\nFor Cedar Learning, prolonged heat or flooding could affect power, internet access or a hosting provider. Customers might require evidence of resilience during severe weather. An organization could also conclude that a particular climate issue is not relevant, provided the conclusion is supported and revisited when conditions change. Avoid treating a checkbox as sufficient analysis.\n\nKeep a context register with issue, interested party, requirement, relevance, owner and review trigger. Review the scope after new services, new locations, acquisitions, supplier changes or significant incidents.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO management system climate-action amendments: https://www.iso.org/climate-change/amendment\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 75,
+      "sortOrder": 2,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Write a one-paragraph scope for Cedar Learning covering the LMS, learner records, staff endpoints and hosting/payment interfaces.\n2. Identify five interested parties and their requirements; distinguish actual requirements from assumptions to verify.\n3. Assess heat, flooding and supplier resilience for information-security relevance.\n4. Record one relevant and one currently non-relevant climate issue with reasons and review triggers.\n5. Draw a simple boundary diagram and identify two dependencies outside direct control.\nDeliverable: scope statement, context register and climate relevance record. Acceptance: explicit boundaries, justified relevance conclusions, and assigned review owners."
+      },
+      "quiz": [
+        {
+          "prompt": "What does Amendment 1:2024 require organizations to consider?",
+          "options": [
+            {
+              "text": "Whether climate change is a relevant issue in their context",
+              "correct": true
+            },
+            {
+              "text": "Mandatory purchase of carbon offsets",
+              "correct": false
+            },
+            {
+              "text": "An automatic new environmental certification",
+              "correct": false
+            },
+            {
+              "text": "Elimination of all cloud services",
+              "correct": false
+            }
+          ],
+          "explanation": "Climate relevance is considered in organizational context; information-security implications follow where relevant."
+        },
+        {
+          "prompt": "Which scope description is strongest?",
+          "options": [
+            {
+              "text": "Named activities, systems, locations and external interfaces",
+              "correct": true
+            },
+            {
+              "text": "All security everywhere",
+              "correct": false
+            },
+            {
+              "text": "Only the easiest server to audit",
+              "correct": false
+            },
+            {
+              "text": "A supplier marketing slogan",
+              "correct": false
+            }
+          ],
+          "explanation": "An intelligible boundary enables risk assessment and reliable audit coverage."
+        },
+        {
+          "prompt": "What should a non-relevance conclusion contain?",
+          "options": [
+            {
+              "text": "Reasoning and conditions that would trigger reassessment",
+              "correct": true
+            },
+            {
+              "text": "Nothing beyond an unchecked box",
+              "correct": false
+            },
+            {
+              "text": "A claim that weather never matters",
+              "correct": false
+            },
+            {
+              "text": "A copy of another company’s scope",
+              "correct": false
+            }
+          ],
+          "explanation": "Context decisions should be defensible and reviewed as circumstances change."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO management system climate-action amendments",
+          "url": "https://www.iso.org/climate-change/amendment"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 2 lab workbook (original)",
+          "fileName": "iso27001-lesson-02-workbook.txt",
+          "fileSize": 1151,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDI6IE9yZ2FuaXphdGlvbmFsIGNvbnRleHQsIHNjb3BlIGFuZCB0aGUgY2xpbWF0ZSBhbWVuZG1lbnQKCk9yaWdpbmFsIHByYWN0aWNlIHdvcmtzaGVldAoKMS4gV3JpdGUgYSBvbmUtcGFyYWdyYXBoIHNjb3BlIGZvciBDZWRhciBMZWFybmluZyBjb3ZlcmluZyB0aGUgTE1TLCBsZWFybmVyIHJlY29yZHMsIHN0YWZmIGVuZHBvaW50cyBhbmQgaG9zdGluZy9wYXltZW50IGludGVyZmFjZXMuCjIuIElkZW50aWZ5IGZpdmUgaW50ZXJlc3RlZCBwYXJ0aWVzIGFuZCB0aGVpciByZXF1aXJlbWVudHM7IGRpc3Rpbmd1aXNoIGFjdHVhbCByZXF1aXJlbWVudHMgZnJvbSBhc3N1bXB0aW9ucyB0byB2ZXJpZnkuCjMuIEFzc2VzcyBoZWF0LCBmbG9vZGluZyBhbmQgc3VwcGxpZXIgcmVzaWxpZW5jZSBmb3IgaW5mb3JtYXRpb24tc2VjdXJpdHkgcmVsZXZhbmNlLgo0LiBSZWNvcmQgb25lIHJlbGV2YW50IGFuZCBvbmUgY3VycmVudGx5IG5vbi1yZWxldmFudCBjbGltYXRlIGlzc3VlIHdpdGggcmVhc29ucyBhbmQgcmV2aWV3IHRyaWdnZXJzLgo1LiBEcmF3IGEgc2ltcGxlIGJvdW5kYXJ5IGRpYWdyYW0gYW5kIGlkZW50aWZ5IHR3byBkZXBlbmRlbmNpZXMgb3V0c2lkZSBkaXJlY3QgY29udHJvbC4KRGVsaXZlcmFibGU6IHNjb3BlIHN0YXRlbWVudCwgY29udGV4dCByZWdpc3RlciBhbmQgY2xpbWF0ZSByZWxldmFuY2UgcmVjb3JkLiBBY2NlcHRhbmNlOiBleHBsaWNpdCBib3VuZGFyaWVzLCBqdXN0aWZpZWQgcmVsZXZhbmNlIGNvbmNsdXNpb25zLCBhbmQgYXNzaWduZWQgcmV2aWV3IG93bmVycy4KCkV2aWRlbmNlIHRhYmxlCkl0ZW0gfCBPd25lciB8IERlY2lzaW9uL3JhdGlvbmFsZSB8IEV2aWRlbmNlIHwgUmV2aWV3IGRhdGUKClNlbGYtcmV2aWV3CldoYXQgd29ya2VkPwpXaGF0IGlzIG1pc3Npbmc/CldoYXQgd2lsbCBjaGFuZ2U/CgoKU291cmNlcyBhbmQgcmVhZGluZwotIElTTy9JRUMgMjcwMDE6MjAyMiDigJQgb2ZmaWNpYWwgc3RhbmRhcmQgb3ZlcnZpZXc6IGh0dHBzOi8vd3d3Lmlzby5vcmcvc3RhbmRhcmQvMjcwMDEKLSBJU08gbWFuYWdlbWVudCBzeXN0ZW0gY2xpbWF0ZS1hY3Rpb24gYW1lbmRtZW50czogaHR0cHM6Ly93d3cuaXNvLm9yZy9jbGltYXRlLWNoYW5nZS9hbWVuZG1lbnQ=",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Leadership, policy and accountable roles",
+      "slug": "leadership-policy-and-accountable-roles",
+      "description": "Clause 5 concerns leadership and commitment, information-security policy, and assigned responsibilities and authorities. Top management connects the ISMS with business direction, makes resources available and establishes accountability. Delegating implementation to an ISMS manager does not eliminate management responsibility.",
+      "content": "Lesson 3 · Leadership, policy and accountable roles\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 5 concerns leadership and commitment, information-security policy, and assigned responsibilities and authorities. Top management connects the ISMS with business direction, makes resources available and establishes accountability. Delegating implementation to an ISMS manager does not eliminate management responsibility.\n\nA useful policy states the organization’s security intent, supports appropriate objectives, and commits to applicable requirements and continual improvement. Supporting standards and procedures explain concrete implementation. A policy should be approved, communicated and reviewed; employees need to understand how it affects their work.\n\nAssign responsibility for risk decisions, access approvals, incident coordination, supplier oversight and internal audits. Different responsibilities may belong to different people. A RACI matrix is a helpful tool, not a prescribed format. Separate conflicting duties where practical; a small organization can use independent review as a compensating safeguard.\n\nFor Cedar Learning, the director approves the policy and resources, service owners own business risks, IT implements controls, and an independent reviewer evaluates audit evidence. Document escalation and who can accept residual risk. A course author should not unilaterally accept exposure of all learner records.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 60,
+      "sortOrder": 3,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Draft a 250-word information-security policy for Cedar Learning.\n2. Create a RACI for risk assessment, access approval, incident handling, supplier reviews and internal audit.\n3. Identify one conflict of duties and propose an independent review.\n4. Write a management approval record with owner, review date and communication method.\nDeliverable: policy, RACI and approval record. Acceptance: visible management accountability and explicit residual-risk acceptance authority."
+      },
+      "quiz": [
+        {
+          "prompt": "Who retains accountability for ISMS leadership?",
+          "options": [
+            {
+              "text": "Top management",
+              "correct": true
+            },
+            {
+              "text": "Only the firewall vendor",
+              "correct": false
+            },
+            {
+              "text": "Only the auditor",
+              "correct": false
+            },
+            {
+              "text": "Every supplier equally",
+              "correct": false
+            }
+          ],
+          "explanation": "Operational delegation does not remove leadership responsibilities."
+        },
+        {
+          "prompt": "Which item belongs in an effective security policy?",
+          "options": [
+            {
+              "text": "Commitment to applicable requirements and continual improvement",
+              "correct": true
+            },
+            {
+              "text": "Every employee password",
+              "correct": false
+            },
+            {
+              "text": "Unapproved technical defaults only",
+              "correct": false
+            },
+            {
+              "text": "A promise that no incident can happen",
+              "correct": false
+            }
+          ],
+          "explanation": "A policy communicates intent and commitments without exposing credentials or making impossible guarantees."
+        },
+        {
+          "prompt": "Why define residual-risk acceptance authority?",
+          "options": [
+            {
+              "text": "So a responsible authorized owner approves remaining exposure",
+              "correct": true
+            },
+            {
+              "text": "To let anyone waive security requirements",
+              "correct": false
+            },
+            {
+              "text": "To eliminate audit evidence",
+              "correct": false
+            },
+            {
+              "text": "To make all risks disappear",
+              "correct": false
+            }
+          ],
+          "explanation": "Acceptance is an accountable business decision and should follow established criteria."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 3 lab workbook (original)",
+          "fileName": "iso27001-lesson-03-workbook.txt",
+          "fileSize": 928,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDM6IExlYWRlcnNoaXAsIHBvbGljeSBhbmQgYWNjb3VudGFibGUgcm9sZXMKCk9yaWdpbmFsIHByYWN0aWNlIHdvcmtzaGVldAoKMS4gRHJhZnQgYSAyNTAtd29yZCBpbmZvcm1hdGlvbi1zZWN1cml0eSBwb2xpY3kgZm9yIENlZGFyIExlYXJuaW5nLgoyLiBDcmVhdGUgYSBSQUNJIGZvciByaXNrIGFzc2Vzc21lbnQsIGFjY2VzcyBhcHByb3ZhbCwgaW5jaWRlbnQgaGFuZGxpbmcsIHN1cHBsaWVyIHJldmlld3MgYW5kIGludGVybmFsIGF1ZGl0LgozLiBJZGVudGlmeSBvbmUgY29uZmxpY3Qgb2YgZHV0aWVzIGFuZCBwcm9wb3NlIGFuIGluZGVwZW5kZW50IHJldmlldy4KNC4gV3JpdGUgYSBtYW5hZ2VtZW50IGFwcHJvdmFsIHJlY29yZCB3aXRoIG93bmVyLCByZXZpZXcgZGF0ZSBhbmQgY29tbXVuaWNhdGlvbiBtZXRob2QuCkRlbGl2ZXJhYmxlOiBwb2xpY3ksIFJBQ0kgYW5kIGFwcHJvdmFsIHJlY29yZC4gQWNjZXB0YW5jZTogdmlzaWJsZSBtYW5hZ2VtZW50IGFjY291bnRhYmlsaXR5IGFuZCBleHBsaWNpdCByZXNpZHVhbC1yaXNrIGFjY2VwdGFuY2UgYXV0aG9yaXR5LgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIE5JU1QgQ3liZXJzZWN1cml0eSBGcmFtZXdvcmsg4oCUIHN1cHBvcnRpbmcgcmlzay1tYW5hZ2VtZW50IGd1aWRhbmNlOiBodHRwczovL3d3dy5uaXN0Lmdvdi9jeWJlcmZyYW1ld29yaw==",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Risk assessment and security objectives",
+      "slug": "risk-assessment-and-security-objectives",
+      "description": "Clause 6 connects planning to information-security risk assessment, risk treatment and measurable objectives. Establish and maintain risk criteria so repeated assessments can be compared. Define likelihood, consequence, acceptance thresholds and how risk owners are identified. A 1–5 matrix is a teaching example, not an ISO-mandated scoring formula.",
+      "content": "Lesson 4 · Risk assessment and security objectives\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 6 connects planning to information-security risk assessment, risk treatment and measurable objectives. Establish and maintain risk criteria so repeated assessments can be compared. Define likelihood, consequence, acceptance thresholds and how risk owners are identified. A 1–5 matrix is a teaching example, not an ISO-mandated scoring formula.\n\nDescribe risk as a plausible event affecting information and a business outcome: unauthorized use of an instructor account could expose learner records and disrupt teaching. Record asset/process, threat, vulnerability, existing controls, consequences, likelihood, score, owner and treatment decision. Distinguish current risk from residual risk expected after treatment.\n\nNIST SP 800-30 provides supporting risk-assessment guidance, but its method does not replace ISO/IEC 27001 requirements. Consider uncertainty and evidence rather than assigning confident numbers without explanation. Risk assessment should be repeated at planned intervals and when significant changes occur.\n\nSecurity objectives should state an intended outcome, a measure, an owner, a timeframe and how progress will be evaluated. For example, privileged LMS access reviews completed by their quarterly due date, with exceptions tracked to closure. A metric should drive a decision; counting documents alone rarely demonstrates effectiveness.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- NIST SP 800-30 Rev. 1 — Guide for Conducting Risk Assessments: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 90,
+      "sortOrder": 4,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Define likelihood and impact scales from 1 to 5 and an acceptance threshold for this exercise.\n2. Assess five scenarios: stolen administrator account, accidental grade modification, backup failure, unavailable hosting and supplier data exposure.\n3. Record rationale, existing controls and an owner for each risk.\n4. Choose two unacceptable risks and propose treatment plus expected residual risk.\n5. Define three objectives with measure, target, owner and due date.\nDeliverable: risk register and objectives tracker. Acceptance: reproducible criteria, reasoned scores and traceable ownership. The teaching scale is not a claim of an ISO-required method."
+      },
+      "quiz": [
+        {
+          "prompt": "Why establish risk criteria before scoring?",
+          "options": [
+            {
+              "text": "To make assessments consistent and comparable",
+              "correct": true
+            },
+            {
+              "text": "Because ISO mandates a single 5×5 matrix",
+              "correct": false
+            },
+            {
+              "text": "To avoid assigning owners",
+              "correct": false
+            },
+            {
+              "text": "To guarantee a zero-risk result",
+              "correct": false
+            }
+          ],
+          "explanation": "Organizations define suitable criteria; a particular scoring matrix is not prescribed."
+        },
+        {
+          "prompt": "Which statement is a useful risk description?",
+          "options": [
+            {
+              "text": "Compromised instructor access could disclose learner records",
+              "correct": true
+            },
+            {
+              "text": "Security is bad",
+              "correct": false
+            },
+            {
+              "text": "Install antivirus",
+              "correct": false
+            },
+            {
+              "text": "The risk score is five",
+              "correct": false
+            }
+          ],
+          "explanation": "A risk statement relates an event to information-security and business consequences."
+        },
+        {
+          "prompt": "Which objective is measurable?",
+          "options": [
+            {
+              "text": "Review all privileged LMS accounts quarterly and track overdue exceptions",
+              "correct": true
+            },
+            {
+              "text": "Improve everything eventually",
+              "correct": false
+            },
+            {
+              "text": "Buy more tools",
+              "correct": false
+            },
+            {
+              "text": "Never have any problems",
+              "correct": false
+            }
+          ],
+          "explanation": "A defined outcome, measure, timeframe and owner support evaluation."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "NIST SP 800-30 Rev. 1 — Guide for Conducting Risk Assessments",
+          "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-30r1.pdf"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 4 lab workbook (original)",
+          "fileName": "iso27001-lesson-04-workbook.txt",
+          "fileSize": 1251,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDQ6IFJpc2sgYXNzZXNzbWVudCBhbmQgc2VjdXJpdHkgb2JqZWN0aXZlcwoKT3JpZ2luYWwgcHJhY3RpY2Ugd29ya3NoZWV0CgoxLiBEZWZpbmUgbGlrZWxpaG9vZCBhbmQgaW1wYWN0IHNjYWxlcyBmcm9tIDEgdG8gNSBhbmQgYW4gYWNjZXB0YW5jZSB0aHJlc2hvbGQgZm9yIHRoaXMgZXhlcmNpc2UuCjIuIEFzc2VzcyBmaXZlIHNjZW5hcmlvczogc3RvbGVuIGFkbWluaXN0cmF0b3IgYWNjb3VudCwgYWNjaWRlbnRhbCBncmFkZSBtb2RpZmljYXRpb24sIGJhY2t1cCBmYWlsdXJlLCB1bmF2YWlsYWJsZSBob3N0aW5nIGFuZCBzdXBwbGllciBkYXRhIGV4cG9zdXJlLgozLiBSZWNvcmQgcmF0aW9uYWxlLCBleGlzdGluZyBjb250cm9scyBhbmQgYW4gb3duZXIgZm9yIGVhY2ggcmlzay4KNC4gQ2hvb3NlIHR3byB1bmFjY2VwdGFibGUgcmlza3MgYW5kIHByb3Bvc2UgdHJlYXRtZW50IHBsdXMgZXhwZWN0ZWQgcmVzaWR1YWwgcmlzay4KNS4gRGVmaW5lIHRocmVlIG9iamVjdGl2ZXMgd2l0aCBtZWFzdXJlLCB0YXJnZXQsIG93bmVyIGFuZCBkdWUgZGF0ZS4KRGVsaXZlcmFibGU6IHJpc2sgcmVnaXN0ZXIgYW5kIG9iamVjdGl2ZXMgdHJhY2tlci4gQWNjZXB0YW5jZTogcmVwcm9kdWNpYmxlIGNyaXRlcmlhLCByZWFzb25lZCBzY29yZXMgYW5kIHRyYWNlYWJsZSBvd25lcnNoaXAuIFRoZSB0ZWFjaGluZyBzY2FsZSBpcyBub3QgYSBjbGFpbSBvZiBhbiBJU08tcmVxdWlyZWQgbWV0aG9kLgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIE5JU1QgU1AgODAwLTMwIFJldi4gMSDigJQgR3VpZGUgZm9yIENvbmR1Y3RpbmcgUmlzayBBc3Nlc3NtZW50czogaHR0cHM6Ly9udmxwdWJzLm5pc3QuZ292L25pc3RwdWJzL0xlZ2FjeS9TUC9uaXN0c3BlY2lhbHB1YmxpY2F0aW9uODAwLTMwcjEucGRmCi0gTklTVCBDeWJlcnNlY3VyaXR5IEZyYW1ld29yayDigJQgc3VwcG9ydGluZyByaXNrLW1hbmFnZW1lbnQgZ3VpZGFuY2U6IGh0dHBzOi8vd3d3Lm5pc3QuZ292L2N5YmVyZnJhbWV3b3Jr",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Risk treatment, Annex A and the Statement of Applicability",
+      "slug": "risk-treatment-annex-a-and-the-statement-of-applicability",
+      "description": "Risk treatment selects actions appropriate to assessed risks, such as changing the activity, implementing safeguards, sharing aspects of risk or accepting risk within defined criteria. Determine the controls necessary for treatment and compare them against Annex A to check that necessary controls have not been overlooked. Annex A is not a shortcut that replaces risk analysis.",
+      "content": "Lesson 5 · Risk treatment, Annex A and the Statement of Applicability\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nRisk treatment selects actions appropriate to assessed risks, such as changing the activity, implementing safeguards, sharing aspects of risk or accepting risk within defined criteria. Determine the controls necessary for treatment and compare them against Annex A to check that necessary controls have not been overlooked. Annex A is not a shortcut that replaces risk analysis.\n\nThe 2022 reference set contains 93 controls across organizational (37), people (8), physical (14) and technological (34) themes. ISO/IEC 27002:2022 supplies guidance. Eleven controls were introduced relative to the previous reference set, including threat intelligence, cloud-service security, ICT readiness for business continuity, physical security monitoring, configuration management, information deletion, data masking, data leakage prevention, monitoring activities, web filtering and secure coding. A changed control count does not imply reduced security work.\n\nThe Statement of Applicability (SoA) records necessary controls, justification for their inclusion, whether they are implemented, and justification for excluding Annex A controls. Controls needed for legal, contractual or business reasons may extend beyond Annex A. Document why a control is relevant, how it is implemented, and where evidence can be found; do not simply mark every line 'yes'.\n\nA treatment plan records actions, owners, resources and dates. Risk owners approve the plan and accept residual risk. Keep the risk register, SoA and implementation evidence mutually consistent. Obtain the licensed standard for exact control identifiers and text; this course does not reproduce that material.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 90,
+      "sortOrder": 5,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Use your lesson 4 risks to identify eight candidate safeguards across the four themes.\n2. Create an SoA-style worksheet: control reference/topic, source risk or requirement, inclusion/exclusion reason, implementation status, owner and evidence.\n3. Address cloud security, configuration management and ICT readiness explicitly.\n4. Build a treatment plan for three gaps with dates and acceptance evidence.\n5. Record an owner’s residual-risk decision and its rationale.\nDeliverable: sample SoA, treatment plan and acceptance record. Acceptance: justified selections and exclusions, risks linked to controls, and no unsupported claims of full standard compliance."
+      },
+      "quiz": [
+        {
+          "prompt": "How many controls are in the 2022 Annex A reference set?",
+          "options": [
+            {
+              "text": "93",
+              "correct": true
+            },
+            {
+              "text": "114",
+              "correct": false
+            },
+            {
+              "text": "11",
+              "correct": false
+            },
+            {
+              "text": "27001",
+              "correct": false
+            }
+          ],
+          "explanation": "There are 93 controls organized into four themes; 11 were introduced relative to the previous reference set."
+        },
+        {
+          "prompt": "What is the role of Annex A in treatment?",
+          "options": [
+            {
+              "text": "A reference set used to check that necessary controls were not overlooked",
+              "correct": true
+            },
+            {
+              "text": "A substitute for assessing risks",
+              "correct": false
+            },
+            {
+              "text": "A list that must all be excluded",
+              "correct": false
+            },
+            {
+              "text": "An automatic certificate",
+              "correct": false
+            }
+          ],
+          "explanation": "Necessary controls are determined through treatment and checked against Annex A."
+        },
+        {
+          "prompt": "What should the SoA explain?",
+          "options": [
+            {
+              "text": "Control selection, implementation status and justified Annex A exclusions",
+              "correct": true
+            },
+            {
+              "text": "Only a list of product names",
+              "correct": false
+            },
+            {
+              "text": "Only an overall score",
+              "correct": false
+            },
+            {
+              "text": "Passwords for every system",
+              "correct": false
+            }
+          ],
+          "explanation": "An SoA makes applicability decisions transparent and traceable."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 5 lab workbook (original)",
+          "fileName": "iso27001-lesson-05-workbook.txt",
+          "fileSize": 1107,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDU6IFJpc2sgdHJlYXRtZW50LCBBbm5leCBBIGFuZCB0aGUgU3RhdGVtZW50IG9mIEFwcGxpY2FiaWxpdHkKCk9yaWdpbmFsIHByYWN0aWNlIHdvcmtzaGVldAoKMS4gVXNlIHlvdXIgbGVzc29uIDQgcmlza3MgdG8gaWRlbnRpZnkgZWlnaHQgY2FuZGlkYXRlIHNhZmVndWFyZHMgYWNyb3NzIHRoZSBmb3VyIHRoZW1lcy4KMi4gQ3JlYXRlIGFuIFNvQS1zdHlsZSB3b3Jrc2hlZXQ6IGNvbnRyb2wgcmVmZXJlbmNlL3RvcGljLCBzb3VyY2UgcmlzayBvciByZXF1aXJlbWVudCwgaW5jbHVzaW9uL2V4Y2x1c2lvbiByZWFzb24sIGltcGxlbWVudGF0aW9uIHN0YXR1cywgb3duZXIgYW5kIGV2aWRlbmNlLgozLiBBZGRyZXNzIGNsb3VkIHNlY3VyaXR5LCBjb25maWd1cmF0aW9uIG1hbmFnZW1lbnQgYW5kIElDVCByZWFkaW5lc3MgZXhwbGljaXRseS4KNC4gQnVpbGQgYSB0cmVhdG1lbnQgcGxhbiBmb3IgdGhyZWUgZ2FwcyB3aXRoIGRhdGVzIGFuZCBhY2NlcHRhbmNlIGV2aWRlbmNlLgo1LiBSZWNvcmQgYW4gb3duZXLigJlzIHJlc2lkdWFsLXJpc2sgZGVjaXNpb24gYW5kIGl0cyByYXRpb25hbGUuCkRlbGl2ZXJhYmxlOiBzYW1wbGUgU29BLCB0cmVhdG1lbnQgcGxhbiBhbmQgYWNjZXB0YW5jZSByZWNvcmQuIEFjY2VwdGFuY2U6IGp1c3RpZmllZCBzZWxlY3Rpb25zIGFuZCBleGNsdXNpb25zLCByaXNrcyBsaW5rZWQgdG8gY29udHJvbHMsIGFuZCBubyB1bnN1cHBvcnRlZCBjbGFpbXMgb2YgZnVsbCBzdGFuZGFyZCBjb21wbGlhbmNlLgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIElTTy9JRUMgMjcwMDI6MjAyMiDigJQgY29udHJvbCBndWlkYW5jZTogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC83NTY1Mi5odG1s",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "People, competence and controlled documentation",
+      "slug": "people-competence-and-controlled-documentation",
+      "description": "Clause 7 addresses resources, competence, awareness, communication and documented information. People need competence for assigned work, with suitable evidence such as experience, training and demonstrated performance. Attendance at a presentation alone does not establish competence.",
+      "content": "Lesson 6 · People, competence and controlled documentation\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 7 addresses resources, competence, awareness, communication and documented information. People need competence for assigned work, with suitable evidence such as experience, training and demonstrated performance. Attendance at a presentation alone does not establish competence.\n\nAwareness should help people understand policy, their contribution to ISMS effectiveness and the consequences of failing to follow requirements. For a training provider, practical examples include identifying phishing, using approved sharing methods, and promptly reporting suspected exposure of learner records. Communication planning considers what to communicate, when, to whom, by whom and how.\n\nDocumented information must be identifiable, reviewed and approved as appropriate, available where needed and protected against inappropriate changes or disclosure. Manage access, versions, retention and disposal. Evidence includes both maintained documents, such as a procedure, and retained records, such as an access-review result.\n\nAvoid a paperwork-only system. A concise procedure used by staff is more valuable than a large copied manual nobody follows. Associate each important document with an owner and review trigger, and each record with a retention rule grounded in actual business and legal requirements.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 60,
+      "sortOrder": 6,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Define competence requirements for the LMS administrator, incident coordinator and instructor.\n2. Design a 15-minute awareness exercise with a scenario and observable success criteria.\n3. Create a document register: identifier, owner, approval, current version, access and review date.\n4. Create a records schedule for risk reviews, training evidence and access approvals; mark retention periods as proposals requiring legal/business confirmation.\n5. Demonstrate a procedure update with an approval and change log.\nDeliverable: competence matrix, awareness exercise and document/records registers. Acceptance: evidence of competence beyond attendance and clear version/access controls."
+      },
+      "quiz": [
+        {
+          "prompt": "Which evidence best supports competence?",
+          "options": [
+            {
+              "text": "A successful observed task against defined criteria",
+              "correct": true
+            },
+            {
+              "text": "Attendance alone in every situation",
+              "correct": false
+            },
+            {
+              "text": "An unopened handbook",
+              "correct": false
+            },
+            {
+              "text": "A job title alone",
+              "correct": false
+            }
+          ],
+          "explanation": "Competence concerns ability to perform assigned work; suitable evidence depends on the role."
+        },
+        {
+          "prompt": "Why control document versions?",
+          "options": [
+            {
+              "text": "To keep approved information available and prevent use of obsolete instructions",
+              "correct": true
+            },
+            {
+              "text": "To prevent all revisions",
+              "correct": false
+            },
+            {
+              "text": "To publish confidential records",
+              "correct": false
+            },
+            {
+              "text": "To avoid ownership",
+              "correct": false
+            }
+          ],
+          "explanation": "Version and approval controls help staff use current instructions."
+        },
+        {
+          "prompt": "What is a retained record?",
+          "options": [
+            {
+              "text": "Evidence that an access review was completed",
+              "correct": true
+            },
+            {
+              "text": "A draft plan with no approval",
+              "correct": false
+            },
+            {
+              "text": "A general slogan",
+              "correct": false
+            },
+            {
+              "text": "A hypothetical future task",
+              "correct": false
+            }
+          ],
+          "explanation": "Records show performed activities and results."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 6 lab workbook (original)",
+          "fileName": "iso27001-lesson-06-workbook.txt",
+          "fileSize": 1228,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDY6IFBlb3BsZSwgY29tcGV0ZW5jZSBhbmQgY29udHJvbGxlZCBkb2N1bWVudGF0aW9uCgpPcmlnaW5hbCBwcmFjdGljZSB3b3Jrc2hlZXQKCjEuIERlZmluZSBjb21wZXRlbmNlIHJlcXVpcmVtZW50cyBmb3IgdGhlIExNUyBhZG1pbmlzdHJhdG9yLCBpbmNpZGVudCBjb29yZGluYXRvciBhbmQgaW5zdHJ1Y3Rvci4KMi4gRGVzaWduIGEgMTUtbWludXRlIGF3YXJlbmVzcyBleGVyY2lzZSB3aXRoIGEgc2NlbmFyaW8gYW5kIG9ic2VydmFibGUgc3VjY2VzcyBjcml0ZXJpYS4KMy4gQ3JlYXRlIGEgZG9jdW1lbnQgcmVnaXN0ZXI6IGlkZW50aWZpZXIsIG93bmVyLCBhcHByb3ZhbCwgY3VycmVudCB2ZXJzaW9uLCBhY2Nlc3MgYW5kIHJldmlldyBkYXRlLgo0LiBDcmVhdGUgYSByZWNvcmRzIHNjaGVkdWxlIGZvciByaXNrIHJldmlld3MsIHRyYWluaW5nIGV2aWRlbmNlIGFuZCBhY2Nlc3MgYXBwcm92YWxzOyBtYXJrIHJldGVudGlvbiBwZXJpb2RzIGFzIHByb3Bvc2FscyByZXF1aXJpbmcgbGVnYWwvYnVzaW5lc3MgY29uZmlybWF0aW9uLgo1LiBEZW1vbnN0cmF0ZSBhIHByb2NlZHVyZSB1cGRhdGUgd2l0aCBhbiBhcHByb3ZhbCBhbmQgY2hhbmdlIGxvZy4KRGVsaXZlcmFibGU6IGNvbXBldGVuY2UgbWF0cml4LCBhd2FyZW5lc3MgZXhlcmNpc2UgYW5kIGRvY3VtZW50L3JlY29yZHMgcmVnaXN0ZXJzLiBBY2NlcHRhbmNlOiBldmlkZW5jZSBvZiBjb21wZXRlbmNlIGJleW9uZCBhdHRlbmRhbmNlIGFuZCBjbGVhciB2ZXJzaW9uL2FjY2VzcyBjb250cm9scy4KCkV2aWRlbmNlIHRhYmxlCkl0ZW0gfCBPd25lciB8IERlY2lzaW9uL3JhdGlvbmFsZSB8IEV2aWRlbmNlIHwgUmV2aWV3IGRhdGUKClNlbGYtcmV2aWV3CldoYXQgd29ya2VkPwpXaGF0IGlzIG1pc3Npbmc/CldoYXQgd2lsbCBjaGFuZ2U/CgoKU291cmNlcyBhbmQgcmVhZGluZwotIElTTy9JRUMgMjcwMDE6MjAyMiDigJQgb2ZmaWNpYWwgc3RhbmRhcmQgb3ZlcnZpZXc6IGh0dHBzOi8vd3d3Lmlzby5vcmcvc3RhbmRhcmQvMjcwMDEKLSBJU08vSUVDIDI3MDAyOjIwMjIg4oCUIGNvbnRyb2wgZ3VpZGFuY2U6IGh0dHBzOi8vd3d3Lmlzby5vcmcvc3RhbmRhcmQvNzU2NTIuaHRtbAotIE5JU1QgQ3liZXJzZWN1cml0eSBGcmFtZXdvcmsg4oCUIHN1cHBvcnRpbmcgcmlzay1tYW5hZ2VtZW50IGd1aWRhbmNlOiBodHRwczovL3d3dy5uaXN0Lmdvdi9jeWJlcmZyYW1ld29yaw==",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Operating controls, suppliers and incident response",
+      "slug": "operating-controls-suppliers-and-incident-response",
+      "description": "Clause 8 concerns operational planning and control, performing risk assessments and implementing treatment. Convert decisions into routines: access approvals and removals, configuration baselines, supplier reviews, change assessments and incident handling. Define criteria and retain enough evidence to show operations followed the plan.",
+      "content": "Lesson 7 · Operating controls, suppliers and incident response\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 8 concerns operational planning and control, performing risk assessments and implementing treatment. Convert decisions into routines: access approvals and removals, configuration baselines, supplier reviews, change assessments and incident handling. Define criteria and retain enough evidence to show operations followed the plan.\n\nCloud-service security requires clarity about shared responsibilities, account administration, logging, encryption, data location, backup and exit arrangements. Outsourcing operations does not remove the organization’s need to understand risks and requirements. Changes to an LMS integration or hosting provider can trigger reassessment.\n\nPlan incident response before an incident occurs. Define reporting paths, triage, authority, preservation of evidence, containment, recovery, communication and learning. Use synthetic exercises; do not attack real systems. Notifications depend on applicable laws and contracts rather than a universal ISO deadline.\n\nNIST SP 800-61 Rev. 3 was published in 2025 and aligns incident-response recommendations with CSF 2.0. It is a supplementary 2025 resource, not an amendment to ISO/IEC 27001. For Cedar Learning, a compromised instructor account calls for authorized containment, review of access and logs, an exposure assessment, communications decisions and tracked follow-up.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- NIST SP 800-61 Rev. 3 (2025) — Incident Response Recommendations: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 90,
+      "sortOrder": 7,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "Tabletop only: an instructor reports an unexpected login and a suspected download of learner data.\n1. Prepare an incident log with timestamps, facts, uncertainty and evidence owner.\n2. Assign incident commander, IT investigator and communications decision-maker.\n3. Propose authorized containment, evidence preservation and recovery steps.\n4. List legal/contractual notification questions without inventing deadlines.\n5. Review the cloud supplier responsibility matrix and identify logging gaps.\n6. Record three lessons learned and assign corrective actions.\nDeliverable: tabletop report, supplier matrix and action log. Acceptance: facts separated from assumptions, preserved evidence and approved communication paths."
+      },
+      "quiz": [
+        {
+          "prompt": "What changed with NIST SP 800-61 Rev. 3 in 2025?",
+          "options": [
+            {
+              "text": "Supporting incident-response guidance was updated; it is not a new ISO edition",
+              "correct": true
+            },
+            {
+              "text": "ISO/IEC 27001 was renamed",
+              "correct": false
+            },
+            {
+              "text": "Incident logs became unnecessary",
+              "correct": false
+            },
+            {
+              "text": "All breaches gained the same reporting deadline",
+              "correct": false
+            }
+          ],
+          "explanation": "NIST guidance is supplementary and separate from ISO standards."
+        },
+        {
+          "prompt": "What does shared responsibility require?",
+          "options": [
+            {
+              "text": "Explicitly identifying customer and provider security responsibilities",
+              "correct": true
+            },
+            {
+              "text": "Assuming the provider handles every control",
+              "correct": false
+            },
+            {
+              "text": "Ignoring supplier changes",
+              "correct": false
+            },
+            {
+              "text": "Publishing administrator credentials",
+              "correct": false
+            }
+          ],
+          "explanation": "Responsibilities and evidence must be understood rather than assumed."
+        },
+        {
+          "prompt": "Which incident action is appropriate first?",
+          "options": [
+            {
+              "text": "Follow authorized triage and preserve relevant evidence",
+              "correct": true
+            },
+            {
+              "text": "Delete every log",
+              "correct": false
+            },
+            {
+              "text": "Publicly speculate about victims",
+              "correct": false
+            },
+            {
+              "text": "Test attacks against unrelated systems",
+              "correct": false
+            }
+          ],
+          "explanation": "Planned, authorized response supports reliable decisions and evidence handling."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "NIST SP 800-61 Rev. 3 (2025) — Incident Response Recommendations",
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 7 lab workbook (original)",
+          "fileName": "iso27001-lesson-07-workbook.txt",
+          "fileSize": 1408,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDc6IE9wZXJhdGluZyBjb250cm9scywgc3VwcGxpZXJzIGFuZCBpbmNpZGVudCByZXNwb25zZQoKT3JpZ2luYWwgcHJhY3RpY2Ugd29ya3NoZWV0CgpUYWJsZXRvcCBvbmx5OiBhbiBpbnN0cnVjdG9yIHJlcG9ydHMgYW4gdW5leHBlY3RlZCBsb2dpbiBhbmQgYSBzdXNwZWN0ZWQgZG93bmxvYWQgb2YgbGVhcm5lciBkYXRhLgoxLiBQcmVwYXJlIGFuIGluY2lkZW50IGxvZyB3aXRoIHRpbWVzdGFtcHMsIGZhY3RzLCB1bmNlcnRhaW50eSBhbmQgZXZpZGVuY2Ugb3duZXIuCjIuIEFzc2lnbiBpbmNpZGVudCBjb21tYW5kZXIsIElUIGludmVzdGlnYXRvciBhbmQgY29tbXVuaWNhdGlvbnMgZGVjaXNpb24tbWFrZXIuCjMuIFByb3Bvc2UgYXV0aG9yaXplZCBjb250YWlubWVudCwgZXZpZGVuY2UgcHJlc2VydmF0aW9uIGFuZCByZWNvdmVyeSBzdGVwcy4KNC4gTGlzdCBsZWdhbC9jb250cmFjdHVhbCBub3RpZmljYXRpb24gcXVlc3Rpb25zIHdpdGhvdXQgaW52ZW50aW5nIGRlYWRsaW5lcy4KNS4gUmV2aWV3IHRoZSBjbG91ZCBzdXBwbGllciByZXNwb25zaWJpbGl0eSBtYXRyaXggYW5kIGlkZW50aWZ5IGxvZ2dpbmcgZ2Fwcy4KNi4gUmVjb3JkIHRocmVlIGxlc3NvbnMgbGVhcm5lZCBhbmQgYXNzaWduIGNvcnJlY3RpdmUgYWN0aW9ucy4KRGVsaXZlcmFibGU6IHRhYmxldG9wIHJlcG9ydCwgc3VwcGxpZXIgbWF0cml4IGFuZCBhY3Rpb24gbG9nLiBBY2NlcHRhbmNlOiBmYWN0cyBzZXBhcmF0ZWQgZnJvbSBhc3N1bXB0aW9ucywgcHJlc2VydmVkIGV2aWRlbmNlIGFuZCBhcHByb3ZlZCBjb21tdW5pY2F0aW9uIHBhdGhzLgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIElTTy9JRUMgMjcwMDI6MjAyMiDigJQgY29udHJvbCBndWlkYW5jZTogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC83NTY1Mi5odG1sCi0gTklTVCBTUCA4MDAtNjEgUmV2LiAzICgyMDI1KSDigJQgSW5jaWRlbnQgUmVzcG9uc2UgUmVjb21tZW5kYXRpb25zOiBodHRwczovL252bHB1YnMubmlzdC5nb3YvbmlzdHB1YnMvU3BlY2lhbFB1YmxpY2F0aW9ucy9OSVNULlNQLjgwMC02MXIzLnBkZgotIE5JU1QgQ3liZXJzZWN1cml0eSBGcmFtZXdvcmsg4oCUIHN1cHBvcnRpbmcgcmlzay1tYW5hZ2VtZW50IGd1aWRhbmNlOiBodHRwczovL3d3dy5uaXN0Lmdvdi9jeWJlcmZyYW1ld29yaw==",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Continuity, recovery and climate-related scenarios",
+      "slug": "continuity-recovery-and-climate-related-scenarios",
+      "description": "Information-security continuity and ICT readiness connect disruption planning to acceptable service outcomes. Identify critical activities and dependencies, determine recovery needs and test the arrangements. Business-impact analysis is a useful technique for understanding consequences over time; ISO/IEC 27001 does not prescribe one universal recovery target.",
+      "content": "Lesson 8 · Continuity, recovery and climate-related scenarios\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nInformation-security continuity and ICT readiness connect disruption planning to acceptable service outcomes. Identify critical activities and dependencies, determine recovery needs and test the arrangements. Business-impact analysis is a useful technique for understanding consequences over time; ISO/IEC 27001 does not prescribe one universal recovery target.\n\nRecovery time objective (RTO) expresses the target time to restore a service. Recovery point objective (RPO) expresses the acceptable point to which data is recovered, often expressed as a time-based data-loss tolerance. Backups are one component: restoration capability, credentials, dependencies, communications and staff availability also matter.\n\nConnect relevant climate issues from lesson 2 to practical scenarios. Heat-related outages or flooding at an infrastructure provider may require alternate connectivity, supplier assurance or changed recovery arrangements. The amendment asks for consideration of relevance; it does not mean every organization must purchase identical resilience technology.\n\nFor Cedar Learning, define separate recovery needs for live examinations and historic training records. Test with synthetic records in an isolated training folder. Record expected versus observed recovery, gaps and decisions. A backup job reporting success is not equivalent to a successful restore.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- ISO management system climate-action amendments: https://www.iso.org/climate-change/amendment\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 75,
+      "sortOrder": 8,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Define proposed RTO and RPO values for examinations, LMS content and learner records, with business rationale.\n2. Map dependencies: hosting, identity service, internet, support staff and payment provider.\n3. Back up a folder containing only synthetic text files; change a file and restore into a separate folder.\n4. Compare hashes or contents to verify recovery; record elapsed time and data loss.\n5. Tabletop a severe-weather outage and identify alternate operations and communications.\nDeliverable: recovery objectives, dependency map and restore-test record. Acceptance: isolated non-production exercise, verified restored content, and documented gaps against objectives."
+      },
+      "quiz": [
+        {
+          "prompt": "What does RPO describe?",
+          "options": [
+            {
+              "text": "Acceptable recovery point/data-loss tolerance",
+              "correct": true
+            },
+            {
+              "text": "The maximum employee count",
+              "correct": false
+            },
+            {
+              "text": "The price of backups",
+              "correct": false
+            },
+            {
+              "text": "Time to approve a policy",
+              "correct": false
+            }
+          ],
+          "explanation": "RPO concerns how far back restored information may be; RTO concerns restoration time."
+        },
+        {
+          "prompt": "What best validates a backup arrangement?",
+          "options": [
+            {
+              "text": "A verified restore with results compared to recovery objectives",
+              "correct": true
+            },
+            {
+              "text": "A successful job status alone",
+              "correct": false
+            },
+            {
+              "text": "A vendor brochure",
+              "correct": false
+            },
+            {
+              "text": "An untested written claim",
+              "correct": false
+            }
+          ],
+          "explanation": "Recovery evidence must demonstrate usable restoration."
+        },
+        {
+          "prompt": "How should relevant climate risks be handled?",
+          "options": [
+            {
+              "text": "Carry justified effects into risk and continuity decisions",
+              "correct": true
+            },
+            {
+              "text": "Apply the same technology purchase to everyone",
+              "correct": false
+            },
+            {
+              "text": "Remove all supplier reviews",
+              "correct": false
+            },
+            {
+              "text": "Ignore them after checking a box",
+              "correct": false
+            }
+          ],
+          "explanation": "Relevant context should inform proportionate management-system decisions."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "ISO management system climate-action amendments",
+          "url": "https://www.iso.org/climate-change/amendment"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 8 lab workbook (original)",
+          "fileName": "iso27001-lesson-08-workbook.txt",
+          "fileSize": 1316,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDg6IENvbnRpbnVpdHksIHJlY292ZXJ5IGFuZCBjbGltYXRlLXJlbGF0ZWQgc2NlbmFyaW9zCgpPcmlnaW5hbCBwcmFjdGljZSB3b3Jrc2hlZXQKCjEuIERlZmluZSBwcm9wb3NlZCBSVE8gYW5kIFJQTyB2YWx1ZXMgZm9yIGV4YW1pbmF0aW9ucywgTE1TIGNvbnRlbnQgYW5kIGxlYXJuZXIgcmVjb3Jkcywgd2l0aCBidXNpbmVzcyByYXRpb25hbGUuCjIuIE1hcCBkZXBlbmRlbmNpZXM6IGhvc3RpbmcsIGlkZW50aXR5IHNlcnZpY2UsIGludGVybmV0LCBzdXBwb3J0IHN0YWZmIGFuZCBwYXltZW50IHByb3ZpZGVyLgozLiBCYWNrIHVwIGEgZm9sZGVyIGNvbnRhaW5pbmcgb25seSBzeW50aGV0aWMgdGV4dCBmaWxlczsgY2hhbmdlIGEgZmlsZSBhbmQgcmVzdG9yZSBpbnRvIGEgc2VwYXJhdGUgZm9sZGVyLgo0LiBDb21wYXJlIGhhc2hlcyBvciBjb250ZW50cyB0byB2ZXJpZnkgcmVjb3Zlcnk7IHJlY29yZCBlbGFwc2VkIHRpbWUgYW5kIGRhdGEgbG9zcy4KNS4gVGFibGV0b3AgYSBzZXZlcmUtd2VhdGhlciBvdXRhZ2UgYW5kIGlkZW50aWZ5IGFsdGVybmF0ZSBvcGVyYXRpb25zIGFuZCBjb21tdW5pY2F0aW9ucy4KRGVsaXZlcmFibGU6IHJlY292ZXJ5IG9iamVjdGl2ZXMsIGRlcGVuZGVuY3kgbWFwIGFuZCByZXN0b3JlLXRlc3QgcmVjb3JkLiBBY2NlcHRhbmNlOiBpc29sYXRlZCBub24tcHJvZHVjdGlvbiBleGVyY2lzZSwgdmVyaWZpZWQgcmVzdG9yZWQgY29udGVudCwgYW5kIGRvY3VtZW50ZWQgZ2FwcyBhZ2FpbnN0IG9iamVjdGl2ZXMuCgpFdmlkZW5jZSB0YWJsZQpJdGVtIHwgT3duZXIgfCBEZWNpc2lvbi9yYXRpb25hbGUgfCBFdmlkZW5jZSB8IFJldmlldyBkYXRlCgpTZWxmLXJldmlldwpXaGF0IHdvcmtlZD8KV2hhdCBpcyBtaXNzaW5nPwpXaGF0IHdpbGwgY2hhbmdlPwoKClNvdXJjZXMgYW5kIHJlYWRpbmcKLSBJU08vSUVDIDI3MDAxOjIwMjIg4oCUIG9mZmljaWFsIHN0YW5kYXJkIG92ZXJ2aWV3OiBodHRwczovL3d3dy5pc28ub3JnL3N0YW5kYXJkLzI3MDAxCi0gSVNPL0lFQyAyNzAwMjoyMDIyIOKAlCBjb250cm9sIGd1aWRhbmNlOiBodHRwczovL3d3dy5pc28ub3JnL3N0YW5kYXJkLzc1NjUyLmh0bWwKLSBJU08gbWFuYWdlbWVudCBzeXN0ZW0gY2xpbWF0ZS1hY3Rpb24gYW1lbmRtZW50czogaHR0cHM6Ly93d3cuaXNvLm9yZy9jbGltYXRlLWNoYW5nZS9hbWVuZG1lbnQKLSBOSVNUIEN5YmVyc2VjdXJpdHkgRnJhbWV3b3JrIOKAlCBzdXBwb3J0aW5nIHJpc2stbWFuYWdlbWVudCBndWlkYW5jZTogaHR0cHM6Ly93d3cubmlzdC5nb3YvY3liZXJmcmFtZXdvcms=",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Monitoring, internal audit and management review",
+      "slug": "monitoring-internal-audit-and-management-review",
+      "description": "Clause 9 evaluates performance through monitoring, measurement, analysis, evaluation, internal audit and management review. Decide what needs monitoring, suitable methods, timing, responsibility and how results will be interpreted. Indicators should expose whether controls and objectives work, not only whether documents exist.",
+      "content": "Lesson 9 · Monitoring, internal audit and management review\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 9 evaluates performance through monitoring, measurement, analysis, evaluation, internal audit and management review. Decide what needs monitoring, suitable methods, timing, responsibility and how results will be interpreted. Indicators should expose whether controls and objectives work, not only whether documents exist.\n\nInternal audits evaluate conformity with the organization’s requirements and the standard’s requirements, and whether the ISMS is effectively implemented and maintained. Plan audits with relevant criteria and scope, consider process importance and previous results, and maintain auditor objectivity and impartiality. Sampling requires clear limitations; a small sample cannot justify claims about unexamined operations.\n\nCollect evidence through records, observation and interviews. Separate observations from conclusions. If an access-review procedure requires quarterly completion but a completed review cannot be demonstrated for the period, describe the requirement, observed evidence and gap without inventing evidence.\n\nManagement review considers the system’s continuing suitability, adequacy and effectiveness and produces decisions about improvement and necessary changes. Prepare useful information on actions, changes, performance, audits, risks and improvement opportunities. Record decisions, owners and follow-up rather than simply a calendar invitation.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- NIST Cybersecurity Framework — supporting risk-management guidance: https://www.nist.gov/cyberframework\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 75,
+      "sortOrder": 9,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Define four metrics, including data source, owner, frequency, target and action threshold.\n2. Create an internal-audit plan covering access management and incident response with scope, criteria and impartial auditor.\n3. Inspect a synthetic evidence set containing one overdue access review and write a requirement/evidence/gap finding.\n4. Draft a management-review agenda and decision log using the risk, incident and continuity results from earlier lessons.\nDeliverable: metrics dashboard specification, audit plan/finding and review decision log. Acceptance: traceable evidence, explicit sampling limits and assigned decisions."
+      },
+      "quiz": [
+        {
+          "prompt": "What supports an audit finding?",
+          "options": [
+            {
+              "text": "A criterion, objective evidence and the identified gap",
+              "correct": true
+            },
+            {
+              "text": "An unsupported opinion",
+              "correct": false
+            },
+            {
+              "text": "A marketing slide",
+              "correct": false
+            },
+            {
+              "text": "A guessed employee intention",
+              "correct": false
+            }
+          ],
+          "explanation": "Findings should be evidence-based and traceable to criteria."
+        },
+        {
+          "prompt": "What helps preserve audit impartiality?",
+          "options": [
+            {
+              "text": "Avoiding review of one’s own work or arranging independent review",
+              "correct": true
+            },
+            {
+              "text": "Having each operator certify only their own work",
+              "correct": false
+            },
+            {
+              "text": "Ignoring conflicts",
+              "correct": false
+            },
+            {
+              "text": "Removing all audit criteria",
+              "correct": false
+            }
+          ],
+          "explanation": "Objectivity and impartiality require appropriate audit assignments."
+        },
+        {
+          "prompt": "What should management review produce?",
+          "options": [
+            {
+              "text": "Decisions and actions about improvement and needed changes",
+              "correct": true
+            },
+            {
+              "text": "Only a meeting invitation",
+              "correct": false
+            },
+            {
+              "text": "Automatic certification",
+              "correct": false
+            },
+            {
+              "text": "A list of passwords",
+              "correct": false
+            }
+          ],
+          "explanation": "Review outputs should drive accountable follow-up."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "NIST Cybersecurity Framework — supporting risk-management guidance",
+          "url": "https://www.nist.gov/cyberframework"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 9 lab workbook (original)",
+          "fileName": "iso27001-lesson-09-workbook.txt",
+          "fileSize": 1090,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDk6IE1vbml0b3JpbmcsIGludGVybmFsIGF1ZGl0IGFuZCBtYW5hZ2VtZW50IHJldmlldwoKT3JpZ2luYWwgcHJhY3RpY2Ugd29ya3NoZWV0CgoxLiBEZWZpbmUgZm91ciBtZXRyaWNzLCBpbmNsdWRpbmcgZGF0YSBzb3VyY2UsIG93bmVyLCBmcmVxdWVuY3ksIHRhcmdldCBhbmQgYWN0aW9uIHRocmVzaG9sZC4KMi4gQ3JlYXRlIGFuIGludGVybmFsLWF1ZGl0IHBsYW4gY292ZXJpbmcgYWNjZXNzIG1hbmFnZW1lbnQgYW5kIGluY2lkZW50IHJlc3BvbnNlIHdpdGggc2NvcGUsIGNyaXRlcmlhIGFuZCBpbXBhcnRpYWwgYXVkaXRvci4KMy4gSW5zcGVjdCBhIHN5bnRoZXRpYyBldmlkZW5jZSBzZXQgY29udGFpbmluZyBvbmUgb3ZlcmR1ZSBhY2Nlc3MgcmV2aWV3IGFuZCB3cml0ZSBhIHJlcXVpcmVtZW50L2V2aWRlbmNlL2dhcCBmaW5kaW5nLgo0LiBEcmFmdCBhIG1hbmFnZW1lbnQtcmV2aWV3IGFnZW5kYSBhbmQgZGVjaXNpb24gbG9nIHVzaW5nIHRoZSByaXNrLCBpbmNpZGVudCBhbmQgY29udGludWl0eSByZXN1bHRzIGZyb20gZWFybGllciBsZXNzb25zLgpEZWxpdmVyYWJsZTogbWV0cmljcyBkYXNoYm9hcmQgc3BlY2lmaWNhdGlvbiwgYXVkaXQgcGxhbi9maW5kaW5nIGFuZCByZXZpZXcgZGVjaXNpb24gbG9nLiBBY2NlcHRhbmNlOiB0cmFjZWFibGUgZXZpZGVuY2UsIGV4cGxpY2l0IHNhbXBsaW5nIGxpbWl0cyBhbmQgYXNzaWduZWQgZGVjaXNpb25zLgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIE5JU1QgQ3liZXJzZWN1cml0eSBGcmFtZXdvcmsg4oCUIHN1cHBvcnRpbmcgcmlzay1tYW5hZ2VtZW50IGd1aWRhbmNlOiBodHRwczovL3d3dy5uaXN0Lmdvdi9jeWJlcmZyYW1ld29yaw==",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Corrective action and the 2025 transition capstone",
+      "slug": "corrective-action-and-the-2025-transition-capstone",
+      "description": "Clause 10 addresses continual improvement and nonconformity/corrective action. A correction fixes the immediate problem; corrective action addresses causes so recurrence is less likely. Respond to the issue, evaluate causes and similar possible problems, implement action, and review effectiveness. Avoid closing a finding merely because a document was edited.",
+      "content": "Lesson 10 · Corrective action and the 2025 transition capstone\n\nLearning goals: explain the topic, apply it to Cedar Learning, and retain useful evidence.\n\nClause 10 addresses continual improvement and nonconformity/corrective action. A correction fixes the immediate problem; corrective action addresses causes so recurrence is less likely. Respond to the issue, evaluate causes and similar possible problems, implement action, and review effectiveness. Avoid closing a finding merely because a document was edited.\n\nFor an overdue access review, correcting the issue means completing the review and addressing inappropriate access. Causes could include unclear ownership or an ineffective reminder/escalation process. Corrective action might assign ownership and add escalation, followed by evidence from subsequent cycles that the process works.\n\nThe 2013-to-2022 certification transition had a 31 October 2025 completion deadline under IAF MD 26. Since that date is in the past, a legacy 2013 certificate must not be represented as current accredited ISO/IEC 27001:2022 certification. Check the certificate scope, edition, dates, issuing body and accreditation status with appropriate authoritative records. This course does not validate anyone’s certificate.\n\nA transition assessment examines changes in management requirements and the revised controls, updates risk treatment and the SoA, identifies evidence gaps, and coordinates applicable certification activities with the certification body. The 2024 climate amendment must also be considered. A checklist is a planning aid, not proof of conformity.\n\nCapstone: assemble a coherent small ISMS evidence pack from your labs. Trace one important risk from context through assessment, treatment, evidence, monitoring and improvement. Peer review the pack and record what still needs licensed-standard review or specialist advice.\n\nSources and reading\n- ISO/IEC 27001:2022 — official standard overview: https://www.iso.org/standard/27001\n- IAF MD 26, Issue 2 — transition requirements for ISO/IEC 27001:2022: https://iaf.nu/wp-content/uploads/2023/02/IAF_MD_26_Issue_2_14022023.pdf\n- ISO management system climate-action amendments: https://www.iso.org/climate-change/amendment\n- ISO/IEC 27002:2022 — control guidance: https://www.iso.org/standard/75652.html\n- ISO27001security.com — supplementary ISMS guidance (user-supplied): https://www.iso27001security.com/\n\nSource status: ISO27001security.com is supplementary community guidance, not the normative standard. Official reading links are supplied, but live retrieval was blocked by the environment network policy during authoring. Exact requirements should be checked against licensed ISO documents. Supporting NIST guidance is not an ISO requirement.",
+      "headerImage": "",
+      "videoUrl": "",
+      "durationMinutes": 90,
+      "sortOrder": 10,
+      "isPublished": true,
+      "lab": {
+        "imageUrl": "",
+        "instructions": "1. Investigate the overdue access-review finding: document correction, cause analysis, corrective action, owner and effectiveness check.\n2. Build a gap checklist for ISO/IEC 27001:2022 and Amendment 1:2024; include the revised SoA and climate relevance record.\n3. Review a fictional certificate marked ISO/IEC 27001:2013 and record why a 2025 transition deadline is not evidence of successful transition.\n4. Assemble scope, policy, risk register, SoA, treatment plan, evidence, audit and review records.\n5. Trace one risk end-to-end and perform a peer review.\nDeliverable: corrective-action record, transition gap plan and capstone evidence index. Acceptance: effectiveness verification, honest gaps, and no unsupported certification claim."
+      },
+      "quiz": [
+        {
+          "prompt": "How does corrective action differ from correction?",
+          "options": [
+            {
+              "text": "It addresses causes to prevent recurrence, rather than only fixing the immediate issue",
+              "correct": true
+            },
+            {
+              "text": "It means deleting the finding",
+              "correct": false
+            },
+            {
+              "text": "It only changes the course title",
+              "correct": false
+            },
+            {
+              "text": "It always means buying software",
+              "correct": false
+            }
+          ],
+          "explanation": "Corrective action includes cause evaluation and effectiveness review."
+        },
+        {
+          "prompt": "What does a transition checklist prove on its own?",
+          "options": [
+            {
+              "text": "It is a planning aid, not proof of certification or conformity",
+              "correct": true
+            },
+            {
+              "text": "Guaranteed certification",
+              "correct": false
+            },
+            {
+              "text": "That all controls work",
+              "correct": false
+            },
+            {
+              "text": "That a 2013 certificate remains current indefinitely",
+              "correct": false
+            }
+          ],
+          "explanation": "Evidence and appropriate certification assessment are still required."
+        },
+        {
+          "prompt": "When should a corrective action be closed?",
+          "options": [
+            {
+              "text": "After appropriate implementation and effectiveness evidence are reviewed",
+              "correct": true
+            },
+            {
+              "text": "When a reminder email is sent",
+              "correct": false
+            },
+            {
+              "text": "When the issue is renamed",
+              "correct": false
+            },
+            {
+              "text": "Before causes are considered",
+              "correct": false
+            }
+          ],
+          "explanation": "Closure should be supported by evidence that action was effective."
+        }
+      ],
+      "resources": [
+        {
+          "type": "link",
+          "title": "ISO/IEC 27001:2022 — official standard overview",
+          "url": "https://www.iso.org/standard/27001"
+        },
+        {
+          "type": "link",
+          "title": "IAF MD 26, Issue 2 — transition requirements for ISO/IEC 27001:2022",
+          "url": "https://iaf.nu/wp-content/uploads/2023/02/IAF_MD_26_Issue_2_14022023.pdf"
+        },
+        {
+          "type": "link",
+          "title": "ISO management system climate-action amendments",
+          "url": "https://www.iso.org/climate-change/amendment"
+        },
+        {
+          "type": "link",
+          "title": "ISO/IEC 27002:2022 — control guidance",
+          "url": "https://www.iso.org/standard/75652.html"
+        },
+        {
+          "type": "link",
+          "title": "ISO27001security.com — supplementary ISMS guidance (user-supplied)",
+          "url": "https://www.iso27001security.com/"
+        },
+        {
+          "type": "worksheet",
+          "title": "Lesson 10 lab workbook (original)",
+          "fileName": "iso27001-lesson-10-workbook.txt",
+          "fileSize": 1418,
+          "file": {
+            "data": "Q3liZXJBY2FkZW15IHwgTGVzc29uIDEwOiBDb3JyZWN0aXZlIGFjdGlvbiBhbmQgdGhlIDIwMjUgdHJhbnNpdGlvbiBjYXBzdG9uZQoKT3JpZ2luYWwgcHJhY3RpY2Ugd29ya3NoZWV0CgoxLiBJbnZlc3RpZ2F0ZSB0aGUgb3ZlcmR1ZSBhY2Nlc3MtcmV2aWV3IGZpbmRpbmc6IGRvY3VtZW50IGNvcnJlY3Rpb24sIGNhdXNlIGFuYWx5c2lzLCBjb3JyZWN0aXZlIGFjdGlvbiwgb3duZXIgYW5kIGVmZmVjdGl2ZW5lc3MgY2hlY2suCjIuIEJ1aWxkIGEgZ2FwIGNoZWNrbGlzdCBmb3IgSVNPL0lFQyAyNzAwMToyMDIyIGFuZCBBbWVuZG1lbnQgMToyMDI0OyBpbmNsdWRlIHRoZSByZXZpc2VkIFNvQSBhbmQgY2xpbWF0ZSByZWxldmFuY2UgcmVjb3JkLgozLiBSZXZpZXcgYSBmaWN0aW9uYWwgY2VydGlmaWNhdGUgbWFya2VkIElTTy9JRUMgMjcwMDE6MjAxMyBhbmQgcmVjb3JkIHdoeSBhIDIwMjUgdHJhbnNpdGlvbiBkZWFkbGluZSBpcyBub3QgZXZpZGVuY2Ugb2Ygc3VjY2Vzc2Z1bCB0cmFuc2l0aW9uLgo0LiBBc3NlbWJsZSBzY29wZSwgcG9saWN5LCByaXNrIHJlZ2lzdGVyLCBTb0EsIHRyZWF0bWVudCBwbGFuLCBldmlkZW5jZSwgYXVkaXQgYW5kIHJldmlldyByZWNvcmRzLgo1LiBUcmFjZSBvbmUgcmlzayBlbmQtdG8tZW5kIGFuZCBwZXJmb3JtIGEgcGVlciByZXZpZXcuCkRlbGl2ZXJhYmxlOiBjb3JyZWN0aXZlLWFjdGlvbiByZWNvcmQsIHRyYW5zaXRpb24gZ2FwIHBsYW4gYW5kIGNhcHN0b25lIGV2aWRlbmNlIGluZGV4LiBBY2NlcHRhbmNlOiBlZmZlY3RpdmVuZXNzIHZlcmlmaWNhdGlvbiwgaG9uZXN0IGdhcHMsIGFuZCBubyB1bnN1cHBvcnRlZCBjZXJ0aWZpY2F0aW9uIGNsYWltLgoKRXZpZGVuY2UgdGFibGUKSXRlbSB8IE93bmVyIHwgRGVjaXNpb24vcmF0aW9uYWxlIHwgRXZpZGVuY2UgfCBSZXZpZXcgZGF0ZQoKU2VsZi1yZXZpZXcKV2hhdCB3b3JrZWQ/CldoYXQgaXMgbWlzc2luZz8KV2hhdCB3aWxsIGNoYW5nZT8KCgpTb3VyY2VzIGFuZCByZWFkaW5nCi0gSVNPL0lFQyAyNzAwMToyMDIyIOKAlCBvZmZpY2lhbCBzdGFuZGFyZCBvdmVydmlldzogaHR0cHM6Ly93d3cuaXNvLm9yZy9zdGFuZGFyZC8yNzAwMQotIElBRiBNRCAyNiwgSXNzdWUgMiDigJQgdHJhbnNpdGlvbiByZXF1aXJlbWVudHMgZm9yIElTTy9JRUMgMjcwMDE6MjAyMjogaHR0cHM6Ly9pYWYubnUvd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDIvSUFGX01EXzI2X0lzc3VlXzJfMTQwMjIwMjMucGRmCi0gSVNPIG1hbmFnZW1lbnQgc3lzdGVtIGNsaW1hdGUtYWN0aW9uIGFtZW5kbWVudHM6IGh0dHBzOi8vd3d3Lmlzby5vcmcvY2xpbWF0ZS1jaGFuZ2UvYW1lbmRtZW50Ci0gSVNPL0lFQyAyNzAwMjoyMDIyIOKAlCBjb250cm9sIGd1aWRhbmNlOiBodHRwczovL3d3dy5pc28ub3JnL3N0YW5kYXJkLzc1NjUyLmh0bWw=",
+            "mimeType": "text/plain"
+          }
+        }
+      ]
+    }
+  ]
+}

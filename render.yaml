@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cyberacademy-course-studio
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/initialize_database.py && gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120 scripts.temporary_server:require_access
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.14
+      - key: PREVIEW_USERNAME
+        value: preview
+      - key: PREVIEW_PASSWORD
+        generateValue: true
